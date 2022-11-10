@@ -8,6 +8,7 @@ const Navbar = () => {
         <Box bg='white' w='100%' p={4} color='black' border="1px solid" display="flex" justifyContent="space-evenly">
         <NavLink style={{fontWeight:"bolder"}} to="/">Fitness Mania</NavLink>
         <NavLink style={{fontWeight:"bolder"}} to="/login">Login</NavLink>
+        
 </Box>
     </div>
   )

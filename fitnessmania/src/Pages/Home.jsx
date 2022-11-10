@@ -1,7 +1,14 @@
 import { Box ,Center,Grid,GridItem} from "@chakra-ui/react";
 import React from "react";
+import { Navigate, NavLink,Link, useNavigate } from "react-router-dom";
 import HStyle from "../Pages/Home.module.css";
 const Home = () => {
+
+const Navigate=useNavigate()
+const handleclick=()=>{
+ Navigate("/popup")
+}
+
   return (
     <div>
 
@@ -16,7 +23,7 @@ const Home = () => {
           reach your goals with MyFitnessPal.
         </div>
         <div>
-          <button className={HStyle.btn1}>START FOR FREE</button>
+          <button onClick={handleclick} className={HStyle.btn1}>START FOR FREE</button>
         </div>
       </div>
 
