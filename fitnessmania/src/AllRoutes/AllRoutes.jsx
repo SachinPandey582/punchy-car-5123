@@ -6,12 +6,13 @@ import Navbar1 from '../Navbar/Navbar1'
 import Home from '../Pages/Home'
 import Login from '../Pages/Login'
 import MyHome from '../Pages/MyHome'
+import PrivateContext from '../PrivateContext/PrivateContext'
 
 const AllRoutes = () => {  
   return (
     <div>
         <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/' element={ <PrivateContext><Home/></PrivateContext>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path="/popup" element={<Form/>}></Route>
         <Route path="/form1" element={<Form1/>}></Route>
