@@ -1,12 +1,10 @@
 import React from 'react'
+import NavbarL from '../Navbar/NavbarL'
 
 const Login = () => {
   return (
-    <div>this is t
-      
-        
-        
-        he login page </div>
+    <div>
+      <NavbarL/> </div>
   )
 }
 

@@ -1,7 +1,9 @@
 import { Box ,Center,Grid,GridItem} from "@chakra-ui/react";
 import React from "react";
-import { Navigate, NavLink,Link, useNavigate } from "react-router-dom";
+import { Navigate, NavLink,Link, useNavigate, resolvePath } from "react-router-dom";
 import HStyle from "../Pages/Home.module.css";
+import Navbar from "../Navbar/Navbar"
+
 const Home = () => {
 
 const Navigate=useNavigate()
@@ -12,7 +14,7 @@ const handleclick=()=>{
   return (
     <div>
 
-   
+<Navbar/>
     <div className={HStyle.Container}>
       <div>
         <div className={HStyle.Heading}>
@@ -63,31 +65,14 @@ const handleclick=()=>{
       
 <div>
 
-       <Box  w="80%" margin='auto'>
-<Grid templateColumns='repeat(3, 1fr)' gap={2}>
-<GridItem>
-    <Box marginLeft="34%" padding="20px">
-        <img src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
-    </Box>
-    <Box fontWeight="bold" fontSize="23px">
-        Learn Track Improve
-    </Box>
-    <Box w="90%">
-    Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.
-    </Box>
-</GridItem><GridItem>
-    <Box marginLeft="34%" padding="20px">
-        <img src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
-    </Box>
-    <Box fontWeight="bold" fontSize="23px">
-        Learn Track Improve
-    </Box>
-    <Box w="90%">
-    Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.
-    </Box>
-</GridItem><GridItem>
-    <Box marginLeft="34%" padding="20px">
-        <img src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
+       <Box  w="80%" margin='auto' border="2px solid">
+<Grid gridTemplateColumns="repeat(3,1fr)" gap={2} border="5px solid green">
+
+
+
+<GridItem border="2px solid red" >
+    <Box border="2px solid red"  >
+        <img style={{margin:"auto"}} src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
     </Box>
     <Box fontWeight="bold" fontSize="23px">
         Learn Track Improve
@@ -96,6 +81,36 @@ const handleclick=()=>{
     Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.
     </Box>
 </GridItem>
+
+
+
+<GridItem>
+    <Box >
+        <img style={{margin:"auto"}} src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
+    </Box>
+    <Box fontWeight="bold" fontSize="23px">
+        Learn Track Improve
+    </Box>
+    <Box w="90%">
+    Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.
+    </Box>
+</GridItem>
+
+
+<GridItem margin="auto">
+    <Box >
+        <img style={{margin:"auto"}} src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
+    </Box>
+    <Box fontWeight="bold" fontSize="23px">
+        Learn Track Improve
+    </Box>
+    <Box w="90%">
+    Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.
+    </Box>
+</GridItem>
+
+
+
 </Grid>
 </Box>
 

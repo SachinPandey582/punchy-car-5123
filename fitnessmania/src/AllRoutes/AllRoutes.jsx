@@ -5,6 +5,7 @@ import Form1 from '../Forms/Form1'
 import Navbar1 from '../Navbar/Navbar1'
 import Home from '../Pages/Home'
 import Login from '../Pages/Login'
+import MyHome from '../Pages/MyHome'
 
 const AllRoutes = () => {  
   return (
@@ -15,6 +16,8 @@ const AllRoutes = () => {
         <Route path="/popup" element={<Form/>}></Route>
         <Route path="/form1" element={<Form1/>}></Route>
         <Route path="/navbar1" element={<Navbar1/>}></Route>
+        <Route path="/myhome" element={<MyHome/>}></Route>
+        
         </Routes>
     </div>
   )

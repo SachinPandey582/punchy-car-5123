@@ -21,7 +21,7 @@ const Form1 = () => {
       <div>
         <button onClick={()=>Navigate("/popup")} className={IPCss.btn2}>Prev</button>
 
-        <button onClick={()=>Navigate("/navbar1")} className={IPCss.btn1}>Next</button>
+        <button onClick={()=>Navigate("/myhome")} className={IPCss.btn1}>Next</button>
       </div>
     </div>
   );
