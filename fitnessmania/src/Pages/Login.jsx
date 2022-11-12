@@ -34,6 +34,7 @@ const handleSubmit=()=>{
     dispatch(loading(false))
     dispatch(error(false))
     dispatch(token(res.data.token))
+   Navigate("/  ")
   }
   ,(err)=>{
     dispatch(loading(false))
