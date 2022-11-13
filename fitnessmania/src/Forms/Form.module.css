@@ -1,0 +1,37 @@
+*{
+    background-color: white;
+}
+
+
+.Container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px ;
+
+}
+.Heading{
+
+    font-size: 1.5217rem;
+    margin: 0px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.15;
+    font-family: Inter, Helvetica, Arial, -apple-system, sans-serif;
+    width: 40%;
+    margin: auto;
+    padding: 200px 10px 10px 10px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.btn{
+    background-color: aliceblue;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 100px;
+    background-color: blue;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
