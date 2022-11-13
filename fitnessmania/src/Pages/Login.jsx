@@ -1,4 +1,4 @@
-import { Box, Input,Button,CircularProgress } from '@chakra-ui/react'
+import { Box, Input,Button,BeatLoader ,Stack} from '@chakra-ui/react'
 import React from 'react'
 import { useContext } from 'react'
 import { useState } from 'react'
@@ -69,7 +69,19 @@ Member Login
       forget Password ?
       <br />
       <br />
-      <Button onClick={handleSubmit} bg="blue" color="white" w="100%">{(state.loading  ? <CircularProgress bg="blue" isIndeterminate color='black' /> : "LogIn")}</Button>
+      <Button onClick={handleSubmit} bg="blue" color="white" w="100%">{(state.loading  ? <Stack direction='row' spacing={4} align='center'>
+  <Button
+    isLoading
+    loadingText='Loading'
+    colorScheme='blue'
+    variant='outline'
+    spinnerPlacement='start'
+    width="250px"
+  >
+    Submit
+  </Button>
+  
+</Stack> : "LogIn")}</Button>
       <br />
       or
       <br />

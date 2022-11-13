@@ -2,6 +2,7 @@ import AllRoutes from './AllRoutes/AllRoutes';
 import './App.css';
 
 import Foods from './Pages/Foods';
+import Footer from './Pages/Footer';
 
 function App() {
   return (
@@ -16,6 +17,17 @@ function App() {
 
      {/* <Form1/> */}
      {/* <Navbar1/> */}
+     <br />
+     <br />
+     <br />
+     <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<Footer/>
     </div>
   );
 }

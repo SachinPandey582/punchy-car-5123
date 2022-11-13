@@ -2,6 +2,7 @@ import { Input, Box, Image ,Button} from '@chakra-ui/react'
 import React from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import Navbar1 from '../Navbar/Navbar1'
+import Footer from './Footer'
 
 const MyHome = () => {
   const Navigate=useNavigate()
@@ -23,12 +24,12 @@ const MyHome = () => {
 
 <Box> <Button onClick={()=>Navigate("/users")}>Check all the users</Button></Box>
 
-<Box margin="auto" border="1px solid" w="80%">
-    <Box>
+<Box margin="auto" style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}} p="30px" w="80%">
+    <Box mb={30}>
     <Image w="100%" src='https://tpc.googlesyndication.com/simgad/7070382364268688307' alt='here is something' ></Image>
     </Box>
-    <Box display="flex">
-    <Box w="70%" bg="red">
+    <Box display="flex" >
+    <Box w="70%" bg="red" mr={20}>
         <Box display="flex" gap={5} justifyContent="space-between" bg="blue" w="100%"  color="white" padding="5px">
 <div style={{backgroundColor:"blue",marginLeft:"20px"}}>
 Your Daily Summary
@@ -39,9 +40,9 @@ Your Daily Summary
 </div>
 
         </Box>
-        <Box  display="flex" border="1px solid">
-        <Box bg="grey" border="1px solid"  w="30%">
-  <Box border="1px solid" margin="10px" padding=" 40px 20px" bg="grey" >
+        <Box  display="flex" >
+        <Box bg="grey"   w="30%">
+  <Box  margin="10px" padding=" 40px 20px" bg="grey" >
     No Photo
     <br />
     provided
@@ -85,14 +86,13 @@ Your Daily Summary
 <Image src='https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg'alt='there si the thing'></Image>
 </Box>
     </Box>
-    <Box w="30%" bg="yellow">
+    <Box w="30%">
         <Image src='https://tpc.googlesyndication.com/simgad/8423553984953850222' alt='here is the things'></Image>
     </Box>
 
     </Box>
 
 </Box>
-
 
     </div>
   )

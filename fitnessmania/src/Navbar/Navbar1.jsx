@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box } from "@chakra-ui/react";
 import { Stack, Image, HStack, VStack } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { LoginContext } from "../Contexts/LoginContext";
+import { status } from "../Contexts/action";
 const Navbar1 = () => {
+  const {state,dispatch} =useContext(LoginContext)
+
+  const Navigate=useNavigate()
+
+  const handleLogout=()=>{
+    dispatch(status(false))
+Navigate("/login")
+  }
   return (
     <Box padding="20px">
       
     <Box w="80%" margin="auto" >
       <HStack spacing="32%" >
-        <Box style={{fontWeight:"bolder" ,color:"blue" ,fontSize:"25px"}}>myfitnesspal</Box>
+        <Box style={{fontWeight:"bolder" ,color:"blue" ,fontSize:"25px"}}>Fitness Mania</Box>
 
         <Box>
           <Box display="flex" gap="2">
@@ -29,7 +39,7 @@ const Navbar1 = () => {
             <Box w="20px" bg="grey" color="white">
               0
             </Box>
-            <Box>Help</Box> <Box>Settings</Box> <Box>Logout </Box>  <Box>Follow us</Box>
+            <Box>Help</Box> <Box>Settings</Box> <Box cursor="pointer" onClick={handleLogout}>Logout </Box>  <Box>Follow us</Box>
             <Box>
               <Image w="20px" marginTop="2px" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="here is something"></Image>
             </Box>

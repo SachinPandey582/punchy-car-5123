@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const NavbarL = () => {
   return (
     <div>
-        <Box  bg='white' w='100%' p={4} color='black' border="1px solid" display="flex" justifyContent="space-evenly">
+        <Box  style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}} bg='white' w='100%' p={4} color='black'  display="flex" justifyContent="space-evenly">
 <Box>
 <NavLink style={{fontWeight:"bolder"}} to="/">Fitness Mania</NavLink>
 

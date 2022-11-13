@@ -11,7 +11,7 @@ const LoginContextProvider=({children})=>{
         loading:false,
         error:false,
         AuthStatus:false,
-        token:null
+        token:null,
     }
 
     const [state,dispatch] =useReducer(reducer,initialState)

@@ -3,6 +3,8 @@ import React from "react";
 import { Navigate, NavLink,Link, useNavigate, resolvePath } from "react-router-dom";
 import HStyle from "../Pages/Home.module.css";
 import Navbar from "../Navbar/Navbar"
+import Slider from "../Extras/Slider";
+import CardSlider from "../Extras/CardSlider";
 
 const Home = () => {
 
@@ -65,13 +67,13 @@ const handleclick=()=>{
       
 <div>
 
-       <Box  w="80%" margin='auto' border="2px solid">
-<Grid gridTemplateColumns="repeat(3,1fr)" gap={2} border="5px solid green">
+       <Box  w="80%" margin='auto'>
+<Grid gridTemplateColumns="repeat(3,1fr)" gap={2}>
 
 
 
-<GridItem border="2px solid red" >
-    <Box border="2px solid red"  >
+<GridItem >
+    <Box   >
         <img style={{margin:"auto"}} src="https://www.myfitnesspal.com/_next/static/media/diary.e6e4c438.svg" alt="first" />
     </Box>
     <Box fontWeight="bold" fontSize="23px">
@@ -123,7 +125,7 @@ const handleclick=()=>{
 <div className={HStyle.heading2}>Every day, more than 3,000 members reach their goals with MyFitnessPal. Get inspired for the journey ahead.</div>
        </div>
        </div>
-
+<CardSlider/>
 
  </div>
 
